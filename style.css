@@ -6,11 +6,13 @@
 
 body {
   background: hsl(0, 0%, 95%);
+  font-size: 15px;
 }
 
 .container {
   width: 50%;
-  margin: 5rem auto;
+  min-width: 300px;
+  margin: 5rem auto 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -19,16 +21,22 @@ body {
 p {
   color: hsla(0, 0%, 100%, 0.75);
   margin: 0 2rem 2rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
 }
 
 h2 {
   color: hsl(0, 0%, 95%);
   margin: 2rem;
   text-transform: uppercase;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .item1 {
   background: hsl(31, 77%, 52%);
+  border-radius: 10px 10px 0 0;
 }
 
 .item2 {
@@ -37,6 +45,7 @@ h2 {
 
 .item3 {
   background: hsl(179, 100%, 13%);
+  border-radius: 0 0 10px 10px;
 }
 
 .attribution {
@@ -52,9 +61,10 @@ h2 {
   border: none;
   margin: 0 2rem 2rem;
   border-radius: 25px;
-  width: 7rem;
+  width: 7.5rem;
   height: 3rem;
   text-transform: capitalize;
+  font-family: "Lexend Deca", sans-serif;
 }
 
 .btn1 {
@@ -65,4 +75,29 @@ h2 {
 }
 .btn3 {
   color: hsl(179, 100%, 13%);
+}
+
+img {
+  margin: 2rem 2rem 0;
+}
+
+@media (min-width: 500px) {
+  .container {
+    width: 80%;
+    min-width: 300px;
+    margin: 5rem auto 1.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .item1 {
+    background: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+  }
+
+  .item3 {
+    background: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+  }
 }
