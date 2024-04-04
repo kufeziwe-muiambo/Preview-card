@@ -83,8 +83,8 @@ img {
 
 @media (min-width: 500px) {
   .container {
-    width: 80%;
-    min-width: 300px;
+    width: 70%;
+    max-width: 800px;
     margin: 5rem auto 1.5rem;
     display: flex;
     flex-direction: row;
